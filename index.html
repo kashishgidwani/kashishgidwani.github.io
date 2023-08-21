@@ -1,138 +1,208 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KASHISH GIDWANI - WEB DEVELOPER,</title>
-    <link rel="stylesheet" href="mystyle.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-<nav class="navbar">
-    <ul class="link-group">
-        <li class="link active"><a href="#home">home</a></li>
-        <li class="link active"><a href="#project">projects</a></li>
-        <li class="link active"><a href="#about">about</a></li>
-        <li class="link active"><a href="#contact">contact</a></li>
-    </ul>
-</nav>
-<section class="home-section active" id="home">
-    <h1 class="hero-heading">hello, i am <br> Kashish</h1>
-    <img src="myimage.jpg" alt="">
-</section> 
-    
-<section class="project-section active" id="project">
-    <h1 class="project-heading">some of my works</h1>
-    <div class="project-container">
-        <div class="project-card">
-            <img src="project.png" class="project-img" alt="">
-            <div class="project-content">
-                <h1 class="project-title">project 01</h1>
-                <p class="project-info">
-                    A few weeks ago, I attended a workshop+make-a-thon organised by HumanoidX club, VIT Chennai and our team got the first position
-                </p>
-                <div class="project-btn-grp">
-                    <a href="https://github.com/kashishgidwani/Fusion_360project"><button class="project-btn github">github repo</button></a>
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">KG</a>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="about-section active" id="about">
-    <div class="about">
-        <div class="about-img-container">
-            <img src="" class="about-img" alt="">
-            <button class="download-cv-btn">downlaod cv</button>
-            <p>my cv is supposed to be here</p>
-        </div>
-        <p class="about-info"></p>
-    </div>
-</section>
 
-<section class="skill-section active">
-<div class="skill-section" id="skill">
-    <h1 class="heading">skills</h1>
-    <div class="skills-container">
-        <div class="skill-card">
-            <div class="skill-level">90%</div>
-            <h1 class="skill-name">HTML</h1>
-            <p class="skill-info">Semantic and non semantic tags with creating forms!</p>
-        </div>
-        <div class="skill-card">
-            <div class="skill-level">75%</div>
-            <h1 class="skill-name">DSA in C</h1>
-            <p class="skill-info">I've knowledge of all data structures and algorithms</p>
-        </div>
-        <div class="skill-card">
-            <div class="skill-level">50%</div>
-            <h1 class="skill-name">Java</h1>
-            <p class="skill-info">Learned Object Oriented Programming in Java</p>
-        </div>
-        <div class="skill-card">
-            <div class="skill-level">50%</div>
-            <h1 class="skill-name">Python</h1>
-            <p class="skill-info">I'm familiar to basics of Python,I also know how to connect MySQl and Python and operate MySQl through Python</p>
-        </div>
-        <div class="skill-card">
-            <div class="skill-level">65%</div>
-            <h1 class="skill-name">Figma</h1>
-            <p class="skill-info">Creating pages for user interaction,linking and adding movements!</p>
-        </div>
-        <div class="skill-card">
-            <div class="skill-level">70%</div>
-            <h1 class="skill-name">CSS</h1>
-            <p class="skill-info">I can edit basic websites from working on borders to padding!</p>
-        </div>
-        <div class="skill-card">
-            <div class="skill-level">90%</div>
-            <h1 class="skill-name">MySQL</h1>
-            <p class="skill-info">I can create and work on simple database!</p>
-        </div>
-    </section>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#project" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-    <div class="timeline">
-        <h1 class="heading">education and experience</h1>
-        <div class="card">
-            <div class="card-body">
-                <h1 class="card-title">2019-2020</h1>
-                <p class="card-detail">Completed 10th from Dr MPS World School, Agra affiliated to CBSE with 96%</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h1 class="card-title">2021-2022</h1>
-                <p class="card-detail">Completed 12th from Dr MPS World School, Agra in Physics, Chemistry and Mathematics with 90%, also got 81 percentile in JEE Mains</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h1 class="card-title">2023-2027</h1>
-                <p class="card-detail">Completing my dual degree of Integrated Mtech in CSE with specialisation in Business Analytics from VIT Chennai</p>
-            </div>
-        </div>
-        
-    </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-<section class="contact-section active" id="contact">
-    <form class="contact-form">
-        <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
-        <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
-        <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
-        <button type="submit" class="form-submit-btn">contact</button>
-    </form>
-    <br>
-    <ul>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Kashish</span><br> Web Designer</h1>
 
-        <li><a href="https://instagram.com/_a.twinkling.dazzle_?igshid=MzNlNGNkZWQ4Mg==">Instagram ID</a></li>
-        <li><a href="https://www.linkedin.com/in/kashish-gidwani-01934324a">LinkedIn</a></li>
-        </ul>
-</section>
-</main>
-<footer>
-<p>© Copyright 2022 Kashish</p>
-</footer>
-</body>
+                    <a href="mailto: kashishgidwani9@gmail.com" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/kashish-gidwani-01934324a" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/kashishgidwani" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://instagram.com/_a.twinkling.dazzle_?igshid=MzNlNGNkZWQ4Mg==" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="kashish.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="kashish2.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'm Kashish</h2>
+                        <p class="about__text">A student pursuing Integrated MTech in Business Analyics at VIT Chennai, I am a passionate and curious student and a web designer. I'm driven to create web solutions that seamlessly merge form and function</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Professional Skills</h2>
+                        <p class="skills__text">Here's the list of skills I've acquired so far</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <iconify-icon icon="teenyicons:c-solid" width="30" class="skills__icon"></iconify-icon>
+                                <span class="skills__name">DSA in C</span>
+                            </div>
+                            <div class="skills__bar skills__dsainc">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <iconify-icon icon="simple-icons:mysql" width="40" class="skills__icon"></iconify-icon>
+                                <span class="skills__name">MySQL</span>
+                            </div>
+                            <div class="skills__bar skills__mysql">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <iconify-icon icon="akar-icons:python-fill" width="30" class="skills__icon"></iconify-icon>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__python">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="project">
+                <h2 class="section-title">Work</h2>
+                <div class="project-card">
+                    <img src="project.png" class="project-img" alt="">
+                    <div class="project-content">
+                        <h1 class="project-title">project 01</h1>
+                        <p class="project-info">
+                            A few weeks ago, I attended a workshop+make-a-thon organised by HumanoidX club, VIT Chennai and our team got the first position
+                        </p>
+                        <div class="project-btn-grp">
+                            <a href="https://github.com/kashishgidwani/Fusion_360project"><button class="block"><b>Github Repo</b></button></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Send" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">© Copyright 2022 Kashish</footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+        <script src="main.js"></script>
+    </body>
 </html>
